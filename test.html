@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test page</title>
+  <style>
+    #projcontainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 0.8em;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #projheader {
+      grid-row: 1 / 2;
+      grid-column: 1 / 6;
+      color: #000;
+    }
+
+    h2#projheader {
+      margin: 2em 30%;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted #000;
+    }
+
+     #project1 {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    } 
+
+    #project2 {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    #project3 {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+    }
+
+    .project-tile {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .project-tile img {
+      max-width: 400px;
+      height: auto;
+      /* display: inline-block; */
+    }
+
+
+    .project-tile:hover {
+      box-shadow: 1px 10px 20px rgba(0,0,0,0.19), 1px 6px 6px rgba(0,0,0,0.23);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="projcontainer">
+    <h2 id="projheader">My Work</h2>
+
+    <div id="project1" class="project-tile">
+      <h3>Simple layout Design using css menu and css gallery</h3>
+      <a href="http://keroles.epizy.com/layout/" target="_blank">
+        <img src="img/layout-screenshot.jpg" alt="">
+      </a>
+    </div>
+
+    <div id="project2" class="project-tile">
+        <h3>Mobile first web design approach using css flexbox</h3>
+        <img src="img/mobile-screenshot.jpg" alt="">
+    </div>
+    
+    <div id="project3" class="project-tile">
+        <h3>Mobile first web design approach using css flexbox</h3>
+        <img src="img/responsive-screenshot.jpg" alt="">
+    </div> 
+  </div>
+
+</body>
+</html>
