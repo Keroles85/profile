@@ -92,8 +92,12 @@
 /* About Section */
 
   #about {
-    background-color: #000;
+    background-color: #444;
     color: #fff;
+  }
+
+  #about h2 {
+    color: #eece1a;
   }
 
   #about #aboutcontainer {
