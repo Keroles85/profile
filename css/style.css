@@ -80,13 +80,14 @@
       top: -1.2em;
   }
 
-  #welcome-section #welcontainer .profile-link {
-    padding: 0 10px;
+  #welcome-section #welcontainer #links {
+    margin-top: 10px;
   }
 
-  #welcome-section #welcontainer .profile-link img {
-    width: 28px;
-    border-radius: 50%;
+  #welcome-section #welcontainer .profile-link {
+    padding: 0 15px;
+    font-size: 2em;
+    color: #000;
   }
 
 /* About Section */
