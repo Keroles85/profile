@@ -1,0 +1,35 @@
+//navbar
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $navbar-color;
+
+  #navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-color: $navbar-color;
+    border-bottom: 2px solid $navbar-border;
+
+    ul li {
+      float: left;
+      list-style: none;
+      padding: 0 40px;
+
+      a {
+        font-size: 1.4em;
+        font-weight: 600;
+        text-decoration: none;
+        color: $nav-link-color;
+        &:hover {
+          color: $hover-color;
+        }
+      }
+
+    }
+
+  }
+
+}

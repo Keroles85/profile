@@ -1,0 +1,24 @@
+//variables
+$primary-color: #222629;
+$secondary-color: #86c232;
+$font-color: #fff;
+$navbar-color: $secondary-color;
+$navbar-border: #000;
+$nav-link-color: $primary-color;
+$hover-color: $font-color;
+
+
+$font-family: 'Times New Roman', Times, serif;
+
+//page reset
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  color: $font-color;
+  font-family: $font-family;
+}

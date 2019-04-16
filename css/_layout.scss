@@ -1,0 +1,53 @@
+//welcome section layout
+#welcome-section #welcontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+//about me section layout
+#about #aboutcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+//projects section layout
+#projects {
+  min-height: 100vh;
+
+  #projcontainer {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, minmax(100px, 450px)) 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 0.8em;
+    text-align: center;
+    justify-content: center;
+  }
+  
+}
+
+//footer section
+footer {
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+
+    a {
+      font-size: 1.4em;
+      font-weight: 600;
+      text-decoration: none;
+      color: $secondary-color;
+    }
+  }
+}

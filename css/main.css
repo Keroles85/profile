@@ -1,0 +1,249 @@
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222629;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #86c232;
+}
+#navbar #navcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  background-color: #86c232;
+  border-bottom: 2px solid #000;
+}
+#navbar #navcontainer ul li {
+  float: left;
+  list-style: none;
+  padding: 0 40px;
+}
+#navbar #navcontainer ul li a {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #222629;
+}
+#navbar #navcontainer ul li a:hover {
+  color: #fff;
+}
+
+#welcome-section #welcontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#about #aboutcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#projects {
+  min-height: 100vh;
+}
+#projects #projcontainer {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(100px, 450px)) 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 0.8em;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+footer div a {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #86c232;
+}
+
+#welcome-section #welcontainer h1 {
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+#welcome-section #welcontainer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#welcome-section #welcontainer #reg {
+  position: relative;
+  font-size: 40%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -1.2em;
+}
+#welcome-section #welcontainer #links {
+  margin-top: 10px;
+}
+#welcome-section #welcontainer .profile-link {
+  padding: 0 15px;
+  font-size: 2em;
+  color: #fff;
+}
+
+#about {
+  background-color: #474B4F;
+  color: #fff;
+}
+#about #aboutcontent {
+  width: 50%;
+}
+#about h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 1em 0;
+  padding: 5px 0;
+  border-bottom: 1px dotted #fff;
+  color: #86c232;
+}
+#about p {
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 10px 0;
+  line-height: 1.55em;
+}
+
+h3 {
+  padding-bottom: 2em;
+  font-weight: 400;
+  color: #222629;
+}
+
+#projheader {
+  grid-row: 1/2;
+  grid-column: 1/6;
+  color: #86c232;
+}
+#projheader h2 {
+  margin: 6em 25% 3em 25%;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #fff;
+}
+
+#project1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#project2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#project3 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.project-tile {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.project-tile:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  cursor: pointer;
+}
+.project-tile img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* navbar section */
+  #navbar #navcontainer ul li {
+    padding: 0 20px;
+  }
+  #navbar #navcontainer ul li a {
+    font-size: 1.3em;
+  }
+
+  /* welcome section */
+  #welcome-section #welcontainer h1 {
+    font-size: 2.5em;
+  }
+  #welcome-section #welcontainer h2 {
+    font-size: 1.25em;
+  }
+
+  /* About Section */
+  #about #aboutcontainer #aboutcontent {
+    width: 90%;
+    margin-top: 2em;
+  }
+  #about #aboutcontainer #aboutcontent h2 {
+    font-size: 1.55em;
+    font-weight: 400;
+  }
+  #about #aboutcontainer #aboutcontent p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin-bottom: 0;
+  }
+
+  /* Projects Section */
+  #projects #projcontainer {
+    grid-template-columns: 20px 1fr 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #projects #projcontainer #projheader {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+  #projects #projcontainer #projheader h2 {
+    margin: 5em 25% 1em 25%;
+  }
+  #projects #projcontainer #project1 {
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+  #projects #projcontainer #project2 {
+    grid-column: 2;
+    grid-row: 3/4;
+  }
+  #projects #projcontainer #project3 {
+    grid-column: 2;
+    grid-row: 4/5;
+  }
+
+  /* footer Section */
+  footer div a {
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

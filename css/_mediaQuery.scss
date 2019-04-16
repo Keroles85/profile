@@ -1,0 +1,80 @@
+@media only screen and (max-width:768px) {
+
+  /* navbar section */
+    #navbar #navcontainer ul li {
+      padding: 0 20px;
+
+      a {
+        font-size: 1.3em;
+      }
+    }
+
+  /* welcome section */
+    #welcome-section #welcontainer {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.25em;
+      }
+    }
+
+  /* About Section */
+    #about #aboutcontainer #aboutcontent {
+      width: 90%;
+      margin-top: 2em;
+
+      h2 {
+        font-size: 1.55em;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.25em;
+        margin-bottom: 0;
+      }
+    }
+
+  /* Projects Section */
+
+    #projects #projcontainer {
+      grid-template-columns: 20px 1fr 20px;
+      grid-auto-rows: minmax(100px, auto);
+
+      #projheader {
+        grid-column: 2;
+        grid-row: 1 / 2;
+
+        h2 {
+          margin: 5em 25% 1em 25%;
+        }
+      }
+
+      #project1 {
+        grid-column: 2;
+        grid-row: 2 / 3;
+      } 
+    
+      #project2 {
+        grid-column: 2;
+        grid-row: 3 / 4;
+      }
+    
+      #project3 {
+        grid-column: 2;
+        grid-row: 4 / 5;
+      }
+
+    }
+
+  /* footer Section */
+    footer div a {
+      font-size: 1em;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  
+}

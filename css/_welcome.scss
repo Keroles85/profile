@@ -1,0 +1,33 @@
+//welcome section
+#welcome-section #welcontainer {
+
+  h1{
+    font-size: 3em;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  #reg {
+    position: relative;
+    font-size: 40%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -1.2em;
+  }
+
+  #links {
+    margin-top: 10px;
+  }
+
+  .profile-link {
+    padding: 0 15px;
+    font-size: 2em;
+    color: #fff;
+  }
+
+}
