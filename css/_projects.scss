@@ -36,10 +36,10 @@ h3 {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
-  transition: transform 0.3s ease;
+  opacity: 0.75;
+  transition: 0.3s ease;
   &:hover {
-    transform: scale(1.05);
-    z-index: 2;
+    opacity: 1;
     cursor: pointer;
   }
 
